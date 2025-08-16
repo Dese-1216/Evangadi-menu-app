@@ -8,7 +8,7 @@ function App() {
     <>
       <div className="all-container">
         <Header />
-        {/* working in 4 ways */}
+        {/* working in 4 ways to help us understood so many ways */}
         {/* use direct insert the value of the repititive property */}
         {/* <div className="foods-container">
           <FoodItem
