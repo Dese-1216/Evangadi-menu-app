@@ -8,7 +8,7 @@ function App() {
     <>
       <div className="all-container">
         <Header />
-
+        {/* working in 4 ways */}
         {/* use direct insert the value of the repititive property */}
         {/* <div className="foods-container">
           <FoodItem
@@ -36,7 +36,7 @@ function App() {
           {console.log(data)}
           {data?.map((singleValue) => {
             // console.log(singleValue);
-            let { id,category, img, title, price, desc } = singleValue; //by using destructure
+            let { id, category, img, title, price, desc } = singleValue; //by using destructure
             return (
               <FoodItem
                 key={id}
@@ -57,7 +57,6 @@ function App() {
           {data?.map((singleValue) => {
             // console.log(singleValue);
             return <FoodItem key={singleValue.id} {...singleValue} />;
-            
           })}
         </div>
 
@@ -68,7 +67,6 @@ function App() {
             return <FoodItem key={id} {...rest} />;
           })}
         </div> */}
-
       </div>
     </>
   );
